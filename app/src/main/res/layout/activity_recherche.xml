@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Recherche">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center|center_vertical"
+        android:text="Recherche de Composant"
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Composant :"
+            android:textColor="#3F51B5"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtComposant"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom de composant"
+            android:inputType="textPersonName"
+            android:textColor="#3F51B5"
+            android:textColorHint="#3F51B5" />
+
+        <Button
+            android:id="@+id/btnChercherC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chercher"
+            app:backgroundTint="#673AB7" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsvComposantR"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDec"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Deconnexion"
+            app:backgroundTint="#F60303" />
+
+        <Button
+            android:id="@+id/btnRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Retour"
+            app:backgroundTint="#FF5722" />
+    </LinearLayout>
+</LinearLayout>
